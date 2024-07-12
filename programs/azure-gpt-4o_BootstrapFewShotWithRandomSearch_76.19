@@ -1,0 +1,73 @@
+{
+  "prog": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "code_sample_1": "public class T5 {  public static void main(String[] args) {   System.out.print(\"Enter an integer: \");   java.util.Scanner input = new java.util.Scanner(System.in);   int number = input.nextInt();   reverse(number);  }  public static void reverse(int number) {   while (number != 0) {    int remainder = number % 10;    System.out.print(remainder);    number = number \/ 10;   }   System.out.println();  } }",
+        "code_sample_2": "public class L3 { public static void main(String[] args)  { int nomor = 0; System.out.print(\"Enter an integer: \"); java.util.Scanner input = new java.util.Scanner(System.in); nomor = input.nextInt(); balik(nomor); } public static void balik(int nomor) { int sisa = 0 ;  while (nomor != 0) { sisa = nomor % 10; System.out.print(sisa); nomor = nomor \/ 10; } System.out.println(); } }",
+        "rationale": "Reasoning: Let's think step by step in order to determine if the code samples are plagiarized. We need to compare the structure, logic, and specific implementation details of both samples.",
+        "explanation": "The two code samples are highly similar in terms of their structure, logic, and functionality. Both programs prompt the user to enter an integer, reverse the digits of the integer using a while loop, and print the reversed number. The differences are minimal and mostly superficial, such as variable names and method names. The core logic and approach to solving the problem are identical, indicating that one sample is likely derived from the other with minor modifications to disguise the copying.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "import java.util.Scanner; public class T7 {  public static void main(String[] args) {   Scanner input = new Scanner(System.in);   System.out.print(\"Enter a 4 by 4 matrix row by row: \");   double[][] m = new double[4][4];   for (int i = 0; i < 4; i++)    for (int j = 0; j < 4; j++)     m[i][j] = input.nextDouble();   System.out.print(\"Sum of the elements in the major diagonal is \" + sumMajorDiagonal(m));  }  public static double sumMajorDiagonal(double[][] m) {   double sum = 0;   for (int i = 0; i < m.length; i++)    sum += m[i][i];   return sum;  } }",
+        "code_sample_2": "import java.util.*; public class L6 { public static double jumlahDiagonal(double[][] m) { double sum = 0; int hit = m.length-1; while (hit >= 0) { sum += m[hit][hit]; hit--; } return sum; } public static void print(double[][] m) { System.out.print(\"Sum of the elements in the major diagonal is \" + jumlahDiagonal(m)); } public static void main(String[] args) { Scanner sc = new Scanner(System.in); double[][] m = new double[4][4]; System.out.println(\"Enter a 4 by 4 matrix row by row: \"); for (int i = 3; i >= 0 ; i--) { for (int j = 3; j >= 0; j--) { m[i][j] = sc.nextDouble(); } } print(m); } }",
+        "rationale": "produce the plagiarized. We need to compare the core logic, structure, and functionality of both code samples to determine if they are essentially the same, despite any superficial changes.",
+        "explanation": "The two code samples share the same core logic and functionality, which is to sum the elements in the major diagonal of a 4x4 matrix. Both samples prompt the user to enter the matrix row by row and then calculate the sum of the diagonal elements. The differences in variable names, loop structures, and the order of input do not mask the fundamental similarity in their approach and output. These similarities strongly suggest that one code sample was derived from the other, with minor alterations to disguise the copying.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T1 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  }  }",
+        "code_sample_2": "* * To change this license header, choose License Headers in Project Properties. * To change this template file, choose Tools | Templates * and open the template in the editor. *\/ \/** * * @author 19984DCAEA13176BBB694F62BA6B5B35 *\/ public class L1 { public static void main(String[] args) {  System.out.println(\"\"Welcome to Java\"\");  System.out.println(\"\"Welcome to Java\"\");  System.out.println(\"\"Welcome to Java\"\");  System.out.println(\"\"Welcome to Java\"\");  System.out.println(\"\"Welcome to Java\"\");  } }",
+        "rationale": "Reasoning: Let's think step by step in order to determine if the code samples are plagiarized. We need to compare the structure, logic, and specific elements of the code to see if one is derived from the other.",
+        "explanation": "The two code samples are nearly identical in terms of output and structure. Both samples print the phrase \"Welcome to Java\" five times, and the only differences are in the formatting and the presence of a comment header in the second sample. The core functionality and specific output are exactly the same, which strongly suggests that one sample was copied from the other with minimal changes.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T5 {  public static void main(String[] args) {   System.out.print(\"Enter an integer: \");   java.util.Scanner input = new java.util.Scanner(System.in);   int number = input.nextInt();   reverse(number);  }  public static void reverse(int number) {   while (number != 0) {    int remainder = number % 10;    System.out.print(remainder);    number = number \/ 10;   }   System.out.println();  } }",
+        "code_sample_2": "import java.util.Scanner; \/**  *  * @author CB6AB3315634A1E4D11B091BA48B60BA  *\/ public class Nomor5_2451041557A22145B3701B0184109CAB013 { \/**  * @param args the command line arguments  *\/ public static void main(String[] args) { Scanner sc = new Scanner(System.in); System.out.print(\"Enter an integer : \"); int number = sc.nextInt(); reverse(number); } public static void reverse(int number){ String strNumber = Integer.toString(number); String temp = \"\"; for(int i = strNumber.length(); i>0;i--){ temp +=i; } int tempNumber = Integer.parseInt(temp); System.out.println((tempNumber)); } }",
+        "rationale": "Reasoning: Let's think step by step in order to determine if the code samples are plagiarized. We need to compare the structure, logic, and implementation details of both samples.",
+        "explanation": "The two code samples are not plagiarized because they use distinctly different methods to achieve the same goal of reversing an integer. The first sample uses a while loop and modulo operations to reverse the number, while the second sample converts the number to a string, manipulates the string, and then converts it back to an integer. These differences in approach and implementation indicate that the code samples were independently developed.",
+        "plagiarized": "No"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "import java.util.Scanner; public class T7 {  public static void main(String[] args) {   Scanner input = new Scanner(System.in);   System.out.print(\"Enter a 4 by 4 matrix row by row: \");   double[][] m = new double[4][4];   for (int i = 0; i < 4; i++)    for (int j = 0; j < 4; j++)     m[i][j] = input.nextDouble();   System.out.print(\"Sum of the elements in the major diagonal is \" + sumMajorDiagonal(m));  }  public static double sumMajorDiagonal(double[][] m) {   double sum = 0;   for (int i = 0; i < m.length; i++)    sum += m[i][i];   return sum;  } }",
+        "code_sample_2": "import java.util.*; public class L1 { public static void main(String[] args) { Scanner input = new Scanner(System.in); System.out.print(\"Enter a 4 by 4 matrix row by row: \"); double[][] m = new double[4][4]; for (int i = 0; i < 4; i++)  { for (int j = 0; j < 4; j++) { m[i][j] = input.nextDouble(); } } System.out.print(\"Sum of the elements in the major diagonal is \" + sumMajorDiagonal(m)); } public static double sumMajorDiagonal(double[][] m) { double sum = 0; for (int i = 0; i < m.length; i++)  {  sum += m[i][i]; } return sum; } }",
+        "rationale": "Reasoning: Let's think step by step in order to determine if the code samples are plagiarized. We need to compare the structure, logic, and specific implementation details of both samples.",
+        "explanation": "The two code samples are nearly identical in structure, logic, and even specific method names and variable names. Both samples prompt the user to enter a 4x4 matrix, store the input in a 2D array, and calculate the sum of the major diagonal elements using a method named `sumMajorDiagonal`. The minor differences in formatting and class names do not mask the fundamental similarity of the code, strongly suggesting that one sample was copied from the other or both were derived from a common source.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T1 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  }  }",
+        "code_sample_2": "public class L6 { public static void print() { for (int i = 5; i > 0; i--) {  System.out.print(\"\"Welcome to Java\\n\"\");  }  } public static void main(String[] args) {  print();  } }",
+        "rationale": "produce the plagiarized. We need to compare the core functionality, structure, and logic of the code samples to determine if one is derived from the other.",
+        "explanation": "The code samples exhibit plagiarism due to their identical output and core functionality, despite differences in implementation. The verbatim use of the specific phrase \"Welcome to Java\" in both samples, combined with the same overall goal and language, strongly suggests that one solution was derived from the other, even if attempts were made to disguise this through minor structural changes.",
+        "plagiarized": "Yes"
+      },
+      {
+        "code_sample_1": "public class T5 {  public static void main(String[] args) {   System.out.print(\"Enter an integer: \");   java.util.Scanner input = new java.util.Scanner(System.in);   int number = input.nextInt();   reverse(number);  }  public static void reverse(int number) {   while (number != 0) {    int remainder = number % 10;    System.out.print(remainder);    number = number \/ 10;   }   System.out.println();  } }",
+        "code_sample_2": "public class L6_fix { public static void main(String[] args)  { int nomor, sisa = 0; System.out.print(\"Enter an integer: \");  java.util.Scanner input = new java.util.Scanner(System.in); nomor = input.nextInt(); while (nomor!=0) { if (nomor!=0){ sisa = nomor % 10; System.out.print(sisa); nomor = nomor \/ 10;} } System.out.println(); } }",
+        "plagiarized": "Yes",
+        "explanation": "The code samples exhibit plagiarism due to their identical input prompts, use of the full \"java.util.Scanner\" class name, and fundamentally identical logic for reversing integers using modulo and division operations. While superficial changes were made in variable names and method structure, the core implementation remains essentially the same, suggesting that the second sample (L6_fix) is a modified version of the first (T5) with attempts to disguise the copying."
+      },
+      {
+        "code_sample_1": "import java.util.Scanner; public class T7 {  public static void main(String[] args) {   Scanner input = new Scanner(System.in);   System.out.print(\"Enter a 4 by 4 matrix row by row: \");   double[][] m = new double[4][4];   for (int i = 0; i < 4; i++)    for (int j = 0; j < 4; j++)     m[i][j] = input.nextDouble();   System.out.print(\"Sum of the elements in the major diagonal is \" + sumMajorDiagonal(m));  }  public static double sumMajorDiagonal(double[][] m) {   double sum = 0;   for (int i = 0; i < m.length; i++)    sum += m[i][i];   return sum;  } }",
+        "code_sample_2": "import java.util.*; public class L3 { public static double jumlahDiagonal(double[][] m) { double sum = 0; for (int i = 0; i < m.length; i++) { sum += m[i][i]; } return sum; } public static void main(String[] args) { Scanner sc = new Scanner(System.in); double[][] m = new double[4][4]; System.out.print(\"Enter a 4 by 4 matrix row by row: \"); for (int i = 0; i < 4; i++) { for (int j = 0; j < 4; j++) { m[i][j] = sc.nextDouble(); } } System.out.print(\"Sum of the elements in the major diagonal is \" + jumlahDiagonal(m)); } }",
+        "plagiarized": "Yes",
+        "explanation": "The two code samples exhibit nearly identical structure, logic, and implementation for solving the same problem, with only minor differences in variable names and method naming. The high degree of similarity in both the overall approach and specific code details, including the exact same matrix size and input prompts, strongly suggests that one sample was derived from the other with only superficial modifications."
+      }
+    ],
+    "signature_instructions": "Detect if two code samples are plagiarized. In plagiarized field answer only : Yes if the code samples are plagiarized, No otherwise. In explenation field add the reason why the code samples are\/ are not plagiarized.",
+    "signature_prefix": "Plagiarized:",
+    "extended_signature_instructions": "Detect if two code samples are plagiarized. In plagiarized field answer only : Yes if the code samples are plagiarized, No otherwise. In explenation field add the reason why the code samples are\/ are not plagiarized.",
+    "extended_signature_prefix": "Plagiarized:"
+  }
+}

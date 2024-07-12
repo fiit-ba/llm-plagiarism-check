@@ -1,0 +1,77 @@
+{
+  "prog": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "code_sample_1": "import java.util.Scanner;  public class T2 {  public static void main(String[] args) {  Scanner input = new Scanner(System.in);   \/\/ Enter radius of the cylinder  System.out.print(\"Enter the radius and length of a cylinder: \");  double radius = input.nextDouble();  double length = input.nextDouble();   double area = radius * radius * 3.14159;  double volume = area * length;   System.out.println(\"The area is \" + area);  System.out.println(\"The volume of the cylinder is \" + volume);  }  }",
+        "code_sample_2": "import java.util.*; public class L5 { public static double hitLuas(double jari2) {  return jari2 * jari2 * 3.14159;  } public static double total(double luas, double panjang) {  return luas * panjang;  } public static void main(String[] args) {  Scanner input = new Scanner(System.in);  double jari2, panjang;  double luas, total;  System.out.print(\"Enter the radius and length of a cylinder: \");  jari2 = input.nextDouble();  panjang = input.nextDouble();  luas = hitLuas(jari2);  total = total(luas, panjang); System.out.print(\"The area is \" + luas + \" , \");  System.out.println(\"The volume of the cylinder is \" + total);  } }",
+        "rationale": "Reasoning: Let's think step by step in order to determine if the code samples are plagiarized. We need to compare the structure, logic, and implementation details of both samples.",
+        "explanation": "The two code samples exhibit significant similarities in their structure and logic. Both samples prompt the user to enter the radius and length of a cylinder, calculate the area and volume using the same mathematical formulas, and then print the results. The differences in variable names and the use of helper methods in the second sample are superficial and do not indicate independent development. The core logic and flow of the program are identical, suggesting that one sample was likely derived from the other.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "import java.util.Scanner;  public class T2 {  public static void main(String[] args) {  Scanner input = new Scanner(System.in);   \/\/ Enter radius of the cylinder  System.out.print(\"Enter the radius and length of a cylinder: \");  double radius = input.nextDouble();  double length = input.nextDouble();   double area = radius * radius * 3.14159;  double volume = area * length;   System.out.println(\"The area is \" + area);  System.out.println(\"The volume of the cylinder is \" + volume);  }  }",
+        "code_sample_2": "import java.util.*; public class L2 { public static void main(String[] args) { Scanner input = new Scanner(System.in); System.out.print(\"Enter the radius and length of a cylinder: \"); double jari2 = input.nextDouble(); double panjang = input.nextDouble(); double luas = jari2 * jari2 * 3.14159; double total = luas * panjang; System.out.println(\"The area is \" + luas); System.out.println(\"The volume of the cylinder is \" + total); } }",
+        "rationale": "Reasoning: Let's think step by step in order to determine if the code samples are plagiarized. We need to compare the structure, logic, and implementation details of both code samples.",
+        "explanation": "The two code samples exhibit identical logic, structure, and functionality, with only superficial differences in variable names and minor formatting. Both samples prompt the user to enter the radius and length of a cylinder, calculate the area and volume using the same formulas, and print the results with identical messages. The level of similarity in the implementation details, including the exact calculations and output logic, strongly suggests that one code sample was derived from the other with minimal alterations, rather than being independently developed.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T1 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  }  }",
+        "code_sample_2": "\/*  * To change this license header, choose License Headers in Project Properties.  * To change this template file, choose Tools | Templates  * and open the template in the editor.  *\/  \/**  *  * @author CB6AB3315634A1E4D11B091BA48B60BA 7E51EEA5FA101ED4DADE9AD3A7A072BB 2F809B10D1ABEDBF2EC288F851B3EBBB  *\/ public class T01 {  public static void main(String[] args){   for(int i = 0; i < 5; i++){  System.out.println(\"Welcome To Java\");  }   } }",
+        "rationale": "Reasoning: Let's think step by step in order to determine if the code samples are plagiarized. We need to compare the logic, structure, and implementation details of both samples.",
+        "explanation": "The two code samples achieve the same output of printing \"Welcome to Java\" five times, but they use different approaches. The first sample uses five separate `System.out.println` statements, while the second sample uses a `for` loop to print the statement five times. The difference in approach and implementation details suggests that these code samples were independently developed to solve the same problem, rather than one being copied from the other.",
+        "plagiarized": "No"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T1 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  }  }",
+        "code_sample_2": "public class L3 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  } }",
+        "rationale": "produce the plagiarized. We ...",
+        "explanation": "The two code samples are identical in every aspect, including the class structure, method, and the repeated print statements. There are no differences in logic, structure, or implementation, which strongly indicates that one code sample was copied directly from the other without any modifications.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T4 {  public static void main(String[] args) {   System.out.println(\"Miles\\t\\tKilometers\");   System.out.println(\"-------------------------------\");   \/\/ Use while loop   int miles = 1;   while (miles <= 10) {    System.out.println(miles + \"\\t\\t\" + miles * 1.609);    miles++;   }  } }",
+        "code_sample_2": "public class L6 { public static void print(int mil)  {  for ( int i = 10 ; i > 0 ; i --){ System.out.println(mil + \"\\t\\t\" + mil * 1.609);  mil++; }  }  public static void main(String[] args) { int mil = 1 ;  System.out.println(\"Miles\\t\\tKilometers\"); System.out.println(\"-------------------------------\"); print(mil); } }",
+        "rationale": "Reasoning: Let's think step by step in order to determine if the code samples are plagiarized. We need to compare the structure, logic, and specific implementation details of both samples.",
+        "explanation": "These code samples exhibit plagiarism due to their identical output formatting, conversion logic, and specific choices like the range of miles (1-10) and exact conversion factor (1.609). While there are surface-level differences in loop structure and method organization, the core implementation and output are too similar to be coincidental, strongly suggesting that one was derived from the other.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T5 {  public static void main(String[] args) {   System.out.print(\"Enter an integer: \");   java.util.Scanner input = new java.util.Scanner(System.in);   int number = input.nextInt();   reverse(number);  }  public static void reverse(int number) {   while (number != 0) {    int remainder = number % 10;    System.out.print(remainder);    number = number \/ 10;   }   System.out.println();  } }",
+        "code_sample_2": "public class L3 { public static void main(String[] args)  { int nomor = 0; System.out.print(\"Enter an integer: \"); java.util.Scanner input = new java.util.Scanner(System.in); nomor = input.nextInt(); balik(nomor); } public static void balik(int nomor) { int sisa = 0 ;  while (nomor != 0) { sisa = nomor % 10; System.out.print(sisa); nomor = nomor \/ 10; } System.out.println(); } }",
+        "rationale": "Reasoning: Let's think step by step in order to determine if the code samples are plagiarized. We need to compare the structure, logic, and implementation details of both samples.",
+        "explanation": "The two code samples exhibit identical logic and structure for reversing an integer. Both use a while loop to repeatedly extract the last digit of the number using the modulo operation and then remove the last digit by dividing the number by 10. The only differences are in variable names and minor formatting, which are superficial and do not indicate independent development. The core logic and approach are the same, suggesting that one code sample was derived from the other with minimal changes.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T4 {  public static void main(String[] args) {   System.out.println(\"Miles\\t\\tKilometers\");   System.out.println(\"-------------------------------\");   \/\/ Use while loop   int miles = 1;   while (miles <= 10) {    System.out.println(miles + \"\\t\\t\" + miles * 1.609);    miles++;   }  } }",
+        "code_sample_2": "public class L1 { public static void main(String[] args) { System.out.println(\"Miles\\t\\tKilometers\"); System.out.println(\"-------------------------------\"); int miles = 1; while (miles <= 10) { System.out.println(miles + \"\\t\\t\" + miles * 1.609); miles++; } } }",
+        "rationale": "produce the plagiarized. We need to compare the structure, logic, and specific implementation details of the two code samples.",
+        "explanation": "The two code samples are nearly identical in terms of structure, logic, and specific implementation details. Both use a while loop to iterate from 1 to 10, converting miles to kilometers using the same conversion factor (1.609) and printing the results in the same format. The only differences are in the class names, which are superficial and do not indicate independent development. The identical output formatting and logic strongly suggest that one code sample was derived from the other.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "import java.util.Scanner; public class T3 {  public static void main(String[] args) {  Scanner input = new Scanner(System.in); \/\/ Prompt the user to enter weight in pounds  System.out.print(\"Enter weight in pounds: \");  double weight = input.nextDouble(); \/\/ Prompt the user to enter height  System.out.print(\"Enter feet: \");  double feet = input.nextDouble();  System.out.print(\"Enter inches: \");  double inches = input.nextDouble(); double height = feet * 12 + inches; \/\/ Compute BMI  double bmi = weight * 0.45359237 \/ ((height * 0.0254) * (height * 0.0254)); \/\/ Display result  System.out.println(\"BMI is \" + bmi);  if (bmi < 18.5)  System.out.println(\"Underweight\");  else if (bmi < 25)  System.out.println(\"Normal\");  else if (bmi < 30)  System.out.println(\"Overweight\");  else  System.out.println(\"Obese\");  } }",
+        "code_sample_2": "import java.util.Scanner; public class L1 { public static void main(String[] args) {  Scanner input = new Scanner(System.in); System.out.print(\"Enter weight in pounds: \");  double weight = input.nextDouble(); System.out.print(\"Enter feet: \");  double feet = input.nextDouble();  System.out.print(\"Enter inches: \");  double inches = input.nextDouble();  double height = feet * 12 + inches; double bmi = weight * 0.45359237  \/ ((height * 0.0254) * (height * 0.0254)); System.out.println(\"BMI is \" + bmi);  if (bmi < 18.5) {  System.out.println(\"Underweight\");  } else if (bmi < 25) {  System.out.println(\"Normal\");  } else if (bmi < 30) {  System.out.println(\"Overweight\");  } else {  System.out.println(\"Obese\");  }  } }",
+        "rationale": "Reasoning: Let's think step by step in order to determine if the code samples are plagiarized. We need to compare the structure, logic, and implementation details of both samples.",
+        "explanation": "The two code samples are nearly identical in terms of structure, logic, and implementation. Both samples prompt the user to enter weight in pounds, height in feet and inches, and then calculate the BMI using the same formula. The conditional statements for categorizing the BMI are also identical. The only differences are minor formatting changes and the addition of braces in the conditional statements in the second sample. These differences are superficial and do not indicate independent development.",
+        "plagiarized": "Yes"
+      }
+    ],
+    "signature_instructions": "Detect if two code samples are plagiarized. In plagiarized field answer only : Yes if the code samples are plagiarized, No otherwise. In explenation field add the reason why the code samples are\/ are not plagiarized.",
+    "signature_prefix": "Plagiarized:",
+    "extended_signature_instructions": "Detect if two code samples are plagiarized. In plagiarized field answer only : Yes if the code samples are plagiarized, No otherwise. In explenation field add the reason why the code samples are\/ are not plagiarized.",
+    "extended_signature_prefix": "Plagiarized:"
+  }
+}

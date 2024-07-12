@@ -37,6 +37,7 @@ distro==1.9.0
 dspy-ai==2.4.12
 executing==2.0.1
 extruct==0.16.0
+faiss-cpu==1.8.0.post1
 fastembed==0.3.3
 fastjsonschema==2.19.1
 filelock==3.13.4

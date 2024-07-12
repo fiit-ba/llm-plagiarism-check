@@ -8,6 +8,11 @@ __pycache__/
 .*DS_Store
 data/IR-Plag-Dataset
 pyproject.toml
+beast_setup.md
+ollama_run.py
+eval_results.csv
+.ruff_cache/
+local_cache
 
 # Distribution / packaging
 .Python
