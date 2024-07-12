@@ -1,6 +1,5 @@
 import dspy
 
-
 class Signature(dspy.Signature):
     """Detect if two code samples are plagiarized. In plagiarized field answer only : Yes if the code samples are plagiarized, No otherwise. In explenation field add the reason why the code samples are/ are not plagiarized."""
 
@@ -12,7 +11,6 @@ class Signature(dspy.Signature):
     plagiarized = dspy.OutputField(
         desc="Yes/No indicating if code samples are plagiarized"
     )
-
 
 class CoT(dspy.Module):
     def __init__(self) -> None:
