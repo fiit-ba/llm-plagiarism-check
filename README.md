@@ -1,42 +1,43 @@
 # LLM-plagiarism-check
 
-## TLDR
-
 We're trying to build a system for source code plagiarism detection using Large Language Models (LLMs) via the DSPy framework. The goal is to compare two input code files, determine if plagiarism has occurred, and provide an explanation for the result.
 
-## Using DSPy in 8 Steps
 
-1. **Define your task**
-   - Expected input: Two input code files (strings containing plain code) to be compared.
-   - Expected output:
-     - Plagiarism detection result (Yes/No)
-     - Explanation/justification of the result
-   - Quality and Cost Specifications: Cost is not a concern; quality is the main priority. We want to try different models.
+## Installation
 
-2. **Define your pipeline**
-   - We don't need any external tools or document retrieval. It will be a simple chain-of-thought step, as we want to evaluate LLM capabilities for plagiarism detection.
+```bash
+git clone https://github.com/williambrach/LLM-plagiarism-check.git
+cd LLM-plagiarism-check
+```
 
-3. **Explore a few examples**
-   - We explored LLM capabilities for plagiarism detection using a few examples with ChatGPT and Claude, yielding promising results.
+## Usage
 
-4. **Define your data**
-   - We are working with a dataset from the publication: [Source Code Plagiarism Detection in Academia with Information Retrieval: Dataset and the Observation](https://github.com/oscarkarnalim/sourcecodeplagiarismdataset/blob/master/IR-Plag-Dataset.zip)
-   - We selected a subset and manually labeled the dataset with our output labels. This dataset should be used for training and testing, while the rest of the original dataset should be used for evaluation.
-   - Dataset: [train.tsv](/data/train.tsv) (65 samples)
+Our project consists of several key components, each serving a specific purpose in our research workflow:
 
-5. **Define your metric**
-   - We are dealing with a **classification problem**, so we will use accuracy as our main metric. *We don't want to evaluate the explanation/justification of the result at the moment*.
-   - Our metric will be simple: if pred_label == true_label then 1 else 0.
+### Jupyter Notebooks
+- [check.ipynb](check.ipynb): This is where we compile and train our DSPy programs.
+- [eval.ipynb](eval.ipynb): Use this notebook to evaluate the performance of our DSPy programs.
+- [jplag.ipynb](jplag.ipynb): Run this to calculate the JPlag benchmark.
+- [analysis.ipynb](analysis.ipynb): This notebook contains all our plots and analysis of results.
 
-6. **Collect preliminary "zero-shot" evaluations**
-   - Done in code.
+### Python Scripts
+- [dataloader.py](dataloader.py): Provides support for loading our research data.
+- [models.py](models.py): Contains the model definitions for our DSPy programs.
 
-7. **Compile with a DSPy optimizer**
-   - We don't want to update weights of the LLM, so we are looking at optimizers such as:
-     - BootstrapFewShot
-     - BootstrapFewShotWithRandomSearch
-     - MIPRO
-     - (Consider adding other relevant optimizers)
+### Data Directories
+- `data/IR-Plag-Dataset/`: This directory contains our plagiarism dataset, sourced from [this GitHub repository](https://github.com/oscarkarnalim/sourcecodeplagiarismdataset/blob/master/IR-Plag-Dataset.zip).
+- `data/jplag/`: Used for the JPlag benchmark calculations.
+- `data/metadata/`: Stores metadata for our DSPy programs.
+- `data/results/`: Where we save our research results.
+- `data/train.tsv`: Our training dataset for DSPy.
+- `programs/` : Contains DSPy programs.
 
-8. **Iterate**
-    - ???
+## Citation
+
+```
+```
+
+
+## Contact
+
+Your Name - [@williambrach](https://x.com/williambrach) - william.brach@stuba.sk

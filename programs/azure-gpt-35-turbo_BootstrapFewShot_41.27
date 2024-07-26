@@ -1,0 +1,77 @@
+{
+  "prog": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "code_sample_1": "public class T5 {  public static void main(String[] args) {   System.out.print(\"Enter an integer: \");   java.util.Scanner input = new java.util.Scanner(System.in);   int number = input.nextInt();   reverse(number);  }  public static void reverse(int number) {   while (number != 0) {    int remainder = number % 10;    System.out.print(remainder);    number = number \/ 10;   }   System.out.println();  } }",
+        "code_sample_2": "import java.util.Scanner; \/*  * To change this license header, choose License Headers in Project Properties.  * To change this template file, choose Tools | Templates  * and open the template in the editor.  *\/ \/**  *  * @author CB6AB3315634A1E4D11B091BA48B60BA 7E51EEA5FA101ED4DADE9AD3A7A072BB 2F809B10D1ABEDBF2EC288F851B3EBBB  *\/ public class T05 { public static void main(String[] args){ Scanner sc = new Scanner(System.in); System.out.print(\"Enter an integer: \"); int number = sc.nextInt(); reverse(number); } public static void reverse(int number){ while(number > 0){ System.out.print(number % 10); number \/= 10; } System.out.println(); } }",
+        "rationale": "produce the plagiarized. We ...",
+        "explanation": "These code samples exhibit similarities in their core logic and output, but also show differences in implementation details, such as the use of a while loop in one and a for loop in the other, and the specific variable names and formatting choices. While there are similarities in the problem statement and output, these are likely due to the nature of the task and the constraints of the Java language, rather than plagiarism.",
+        "plagiarized": "No"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T1 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  }  }",
+        "code_sample_2": "public class L3 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  } }",
+        "rationale": "produce the plagiarized. We ...",
+        "explanation": "These code samples exhibit plagiarism due to their identical structure, logic, and output. The code is too simple and generic to be considered an independent solution, and the exact repetition of the same output statement five times strongly suggests that one code sample was copied from the other.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T5 {  public static void main(String[] args) {   System.out.print(\"Enter an integer: \");   java.util.Scanner input = new java.util.Scanner(System.in);   int number = input.nextInt();   reverse(number);  }  public static void reverse(int number) {   while (number != 0) {    int remainder = number % 10;    System.out.print(remainder);    number = number \/ 10;   }   System.out.println();  } }",
+        "code_sample_2": "import java.util.Scanner; \/**  *  * @author 65FBEF05E01FAC390CB3FA073FB3E8CF (452BF208BF901322968557227B8F6EFE010)  *\/ public class T05 { public static void main(String[] args) { Scanner s = new Scanner(System.in); System.out.print(\"Enter a integer: \"); int a = s.nextInt(); reverse(a); } public static void reverse(int number) { String temp=String.valueOf(number); for(int i=temp.length();i>0;i--){ System.out.print(temp.charAt(i-1)); } } }",
+        "rationale": "produce the plagiarized. We will compare the two code samples and look for similarities in their implementation details, logic, and structure.",
+        "explanation": "These code samples exhibit significant differences in implementation details and logic, with the first using a mathematical approach with modulo and division operations, while the second converts the number to a string and reverses it using string manipulation. Additionally, the input prompt and variable names are different, suggesting independent development rather than copying.",
+        "plagiarized": "No"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T4 {  public static void main(String[] args) {   System.out.println(\"Miles\\t\\tKilometers\");   System.out.println(\"-------------------------------\");   \/\/ Use while loop   int miles = 1;   while (miles <= 10) {    System.out.println(miles + \"\\t\\t\" + miles * 1.609);    miles++;   }  } }",
+        "code_sample_2": "public class L1 { public static void main(String[] args) { System.out.println(\"Miles\\t\\tKilometers\"); System.out.println(\"-------------------------------\"); int miles = 1; while (miles <= 10) { System.out.println(miles + \"\\t\\t\" + miles * 1.609); miles++; } } }",
+        "rationale": "produce the plagiarized. We ...",
+        "explanation": "These code samples are nearly identical, with the only difference being the class name in Code Sample 2. This suggests that Code Sample 2 is a direct copy of Code Sample 1 with only a minor alteration to the class name. Therefore, these code samples are plagiarized.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "import java.util.Scanner; public class T7 {  public static void main(String[] args) {   Scanner input = new Scanner(System.in);   System.out.print(\"Enter a 4 by 4 matrix row by row: \");   double[][] m = new double[4][4];   for (int i = 0; i < 4; i++)    for (int j = 0; j < 4; j++)     m[i][j] = input.nextDouble();   System.out.print(\"Sum of the elements in the major diagonal is \" + sumMajorDiagonal(m));  }  public static double sumMajorDiagonal(double[][] m) {   double sum = 0;   for (int i = 0; i < m.length; i++)    sum += m[i][i];   return sum;  } }",
+        "code_sample_2": "import java.util.Scanner; \/**  *  * @author ASUS  *\/ public class Nomor7_2451041557A22145B3701B0184109CAB013 { \/**  * @param args the command line arguments  *\/ public static void main(String[] args) { Scanner sc = new Scanner(System.in); int [][] matrix = new int [4][4]; int sum =0; System.out.println(\"Enter a 4-by-4 matrix row by row: \"); for(int i =0 ;i<4;i++){ for(int j=0;j<4;j++){ matrix[i][j]= sc.nextInt(); if(i==j){ sum += matrix[i][j]; } } } System.out.println(\"Sum of the elements in the major diagonal is \"+sum); } }",
+        "rationale": "produce the plagiarized. We ...",
+        "explanation": "The two code samples exhibit similar functionality in that they both read in a 4x4 matrix and calculate the sum of the major diagonal. However, the implementation details are different, with the second code sample using a nested loop to read in the matrix and calculate the diagonal sum, while the first code sample uses a single loop and a separate method to calculate the diagonal sum. The differences in implementation and coding style suggest independent development rather than plagiarism.",
+        "plagiarized": "No"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "import java.util.Scanner;  public class T2 {  public static void main(String[] args) {  Scanner input = new Scanner(System.in);   \/\/ Enter radius of the cylinder  System.out.print(\"Enter the radius and length of a cylinder: \");  double radius = input.nextDouble();  double length = input.nextDouble();   double area = radius * radius * 3.14159;  double volume = area * length;   System.out.println(\"The area is \" + area);  System.out.println(\"The volume of the cylinder is \" + volume);  }  }",
+        "code_sample_2": "import java.util.Scanner; \/** * * @author 65FBEF05E01FAC390CB3FA073FB3E8CF (452BF208BF901322968557227B8F6EFE010) *\/ public class T02 { public static void main(String[] args) {  Scanner s = new Scanner(System.in);  System.out.print(\"Enter the radius and length of a cylinder: \");  float r = s.nextFloat();  float l = s.nextFloat();  System.out.println(\"The area is \" + r * r * 3.14159);  System.out.println(\"The volume is \" + (r * r * 3.14159) * l);  } }",
+        "rationale": "produce the plagiarized. We ...",
+        "explanation": "These code samples exhibit similarities in implementation details, such as the use of a Scanner object to read input, and the calculation of area and volume using the same formula. However, the differences in variable types and formatting suggest that these are independent solutions to a common problem, rather than direct copying.",
+        "plagiarized": "No"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "import java.util.Scanner; public class T7 {  public static void main(String[] args) {   Scanner input = new Scanner(System.in);   System.out.print(\"Enter a 4 by 4 matrix row by row: \");   double[][] m = new double[4][4];   for (int i = 0; i < 4; i++)    for (int j = 0; j < 4; j++)     m[i][j] = input.nextDouble();   System.out.print(\"Sum of the elements in the major diagonal is \" + sumMajorDiagonal(m));  }  public static double sumMajorDiagonal(double[][] m) {   double sum = 0;   for (int i = 0; i < m.length; i++)    sum += m[i][i];   return sum;  } }",
+        "code_sample_2": "import java.util.*; public class L1 { public static void main(String[] args) { Scanner input = new Scanner(System.in); System.out.print(\"Enter a 4 by 4 matrix row by row: \"); double[][] m = new double[4][4]; for (int i = 0; i < 4; i++)  { for (int j = 0; j < 4; j++) { m[i][j] = input.nextDouble(); } } System.out.print(\"Sum of the elements in the major diagonal is \" + sumMajorDiagonal(m)); } public static double sumMajorDiagonal(double[][] m) { double sum = 0; for (int i = 0; i < m.length; i++)  {  sum += m[i][i]; } return sum; } }",
+        "rationale": "determine if the code samples are plagiarized. We will compare the two code samples by looking at their implementation details, coding style, and variable naming conventions.",
+        "explanation": "These code samples are very similar, with only minor differences in formatting and variable names. However, the core logic and implementation details are identical, including the use of a 4x4 matrix, the input prompt, and the diagonal sum calculation method. These similarities strongly suggest that one code sample was derived from the other with minimal alterations, rather than being independently developed.",
+        "plagiarized": "Yes"
+      },
+      {
+        "augmented": true,
+        "code_sample_1": "public class T1 {  public static void main(String[] args) {  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  System.out.println(\"Welcome to Java\");  }  }",
+        "code_sample_2": "\/*  * To change this license header, choose License Headers in Project Properties.  * To change this template file, choose Tools | Templates  * and open the template in the editor.  *\/ \/**  *  * @author 19984DCAEA13176BBB694F62BA6B5B35  *\/ public class L2 {  public static void main(String[] args) { System.out.println(\"Welcome to Java\"); System.out.println(\"Welcome to Java\"); System.out.println(\"Welcome to Java\"); System.out.println(\"Welcome to Java\"); System.out.println(\"Welcome to Java\"); } }",
+        "rationale": "produce the plagiarized. We ...",
+        "explanation": "These code samples exhibit identical structure, logic, and output, with no differences in implementation details or coding style. The level of similarity is so high that it is unlikely to be coincidental, strongly suggesting that one code sample was copied from the other.",
+        "plagiarized": "Yes"
+      }
+    ],
+    "signature_instructions": "Detect if two code samples are plagiarized. In plagiarized field answer only : Yes if the code samples are plagiarized, No otherwise. In explenation field add the reason why the code samples are\/ are not plagiarized.",
+    "signature_prefix": "Plagiarized:",
+    "extended_signature_instructions": "Detect if two code samples are plagiarized. In plagiarized field answer only : Yes if the code samples are plagiarized, No otherwise. In explenation field add the reason why the code samples are\/ are not plagiarized.",
+    "extended_signature_prefix": "Plagiarized:"
+  }
+}

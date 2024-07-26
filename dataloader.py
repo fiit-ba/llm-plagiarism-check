@@ -86,9 +86,7 @@ def process_plagiarized_files(
     for p_folder in plagiarized_folders:
         p_folder_path = os.path.join(plagiarized_path, p_folder)
         # Get level folders, excluding hidden folders and "01"
-        level_folders = [
-            f for f in os.listdir(p_folder_path) if not f.startswith(".")
-        ]
+        level_folders = [f for f in os.listdir(p_folder_path) if not f.startswith(".")]
         for level_folder in level_folders:
             level_folder_path = os.path.join(p_folder_path, level_folder)
             java_files = [
@@ -101,7 +99,7 @@ def process_plagiarized_files(
                 file_content = read_file_content(os.path.join(level_folder_path, file))
                 rows.append(
                     {
-                        "L": int(level_folder.replace("L", "")),  # Extract level number
+                        "L": int(p_folder.replace("L", "")),  # Extract level number
                         "case": case_number,
                         "sample_1": original_content,
                         "sample_2": file_content,
@@ -140,7 +138,7 @@ def build_eval_dataset(data_path: str) -> pd.DataFrame:
         # Process non-plagiarized and plagiarized files
         rows.extend(
             process_non_plagiarized_files(case_path, original_content, case_number)
-        )  
+        )
         rows.extend(process_plagiarized_files(case_path, original_content, case_number))
 
     return pd.DataFrame(rows)

@@ -1,0 +1,6 @@
+optimizer,score,save_path
+zero-shot,6.35,
+BootstrapFewShot,71.43,programs/azure-gpt-4o_BootstrapFewShot_71.43
+BootstrapFewShotWithRandomSearch,76.19,programs/azure-gpt-4o_BootstrapFewShotWithRandomSearch_76.19
+KNNFewShot,74.6,programs/azure-gpt-4o_KNNFewShot_74.6
+MIPROv2,73.02,programs/azure-gpt-4o_MIPROv2_73.02
