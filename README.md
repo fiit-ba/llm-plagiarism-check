@@ -50,4 +50,4 @@ Our project consists of several key components, each serving a specific purpose 
 
 ## Contact
 
-Your Name - [@williambrach](https://x.com/williambrach) - william.brach@stuba.sk
+William Brach - [@williambrach](https://x.com/williambrach) - william.brach@stuba.sk
