@@ -6,8 +6,18 @@ We're trying to build a system for source code plagiarism detection using Large 
 ## Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/williambrach/LLM-plagiarism-check.git
 cd LLM-plagiarism-check
+
+# Create a virtual environment
+python3 -m venv llm-plagiarism-check
+
+# Activate the virtual environment
+source llm-plagiarism-check/bin/activate
+
+# Install the required packages
+pip install -r requirements.txt
 ```
 
 ## Usage
