@@ -1,3 +1,9 @@
+If you want to use this code, please cite our article describing this solution:
+
+IEEE style
+
+W. Brach, K. Košťál and M. Ries, "Can Large Language Model Detect Plagiarism in Source Code?," 2024 IEEE International Conference on Foundation and Large Language Models (FLLM2024), Dubai, United Arab Emirates, 2024, pp. 1-8.
+
 # LLM-plagiarism-check
 
 We're trying to build a system for source code plagiarism detection using Large Language Models (LLMs) via the DSPy framework. The goal is to compare two input code files, determine if plagiarism has occurred, and provide an explanation for the result.
@@ -7,7 +13,7 @@ We're trying to build a system for source code plagiarism detection using Large 
 
 ```bash
 # Clone the repository
-git clone https://github.com/williambrach/LLM-plagiarism-check.git
+git clone https://github.com/fiit-ba/LLM-plagiarism-check.git
 cd LLM-plagiarism-check
 
 # Create a virtual environment
