@@ -51,6 +51,17 @@ Our project consists of several key components, each serving a specific purpose 
 ## Citation
 
 ```
+@INPROCEEDINGS{10852497,
+  author={Brach, William and Košt’ál, Kristián and Ries, Michal},
+  booktitle={2024 2nd International Conference on Foundation and Large Language Models (FLLM)}, 
+  title={Can Large Language Model Detect Plagiarism in Source Code?}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={370-377},
+  keywords={Measurement;Computer languages;Codes;Accuracy;Reviews;Plagiarism;Large language models;Source coding;Education;Software development management;large language models;natural language processing;code similarity;code plagiarism},
+  doi={10.1109/FLLM63129.2024.10852497}}
+
 ```
 
 
